@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Onest:wght@700&display=swap');
+
+:root{
+    --primary-color: pink;
+    --second-color: green;
+    --holl-collor: black;
+    --k-color: white;
+    --l-color: blue;
+    --1--color:purple light;
+    --2--color:purple;
+    --3--color:yellow light;
+    --4--color:yellow;
+    --5--color:orange;
+    --6--color:grey;
+    
+}
+
+h1 {
+    color:var(--holl-collor)
+  }
+
+.gets {
+    background-color:var(--holl-collor);
+}  
+
+h3 {
+    color: var(--k-color);
+}
+
+
+h2 {
+    color: var(--k-color)
+}
+
+a {
+    color: var(--k-color)
+}
+
+.kol {
+    background-color: var(--l-color)
+}
+
+p{
+    color: var(--k-color)
+}
+
+.fonk {
+    font-family: 'Onest', sans-serif;
+    padding: 2px 320px;
+    font-size: 28px
+}
+
+.kip{
+    background-color: (--3--color);
+    padding: 1px 80px;
+    font-size: 10px
+}
+
+.rek{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 70px;
+    font-size: 13px
+}
+
+.pol{
+    padding: 10px 560px
+}
+
+.mol{
+    font-family: "Montserrat", sans-serif;
+    padding: 2px 430px;
+    font-size: 13px 
+}
+
+.fedos{
+    padding: 27px 645px
+}
+
+.lom{
+    font-family: 'Onest', sans-serif;
+    padding: 2px 550px;
+    font-size: 28px
+}
+
+.image{
+    padding: 2px 130px ;
+    font-size: 2px ;
+    }  
+.a{
+    color: var()
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.b{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.c{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.d{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.f{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.g{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.f{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.h{
+    padding: 2px 30px ;
+    font-size: 18px  
+}    
+
+.s{
+    padding: 25px 30px ;
+    font-size: 10px;
+}    
+
+.image1{
+    padding: 10px 200px ;
+}
