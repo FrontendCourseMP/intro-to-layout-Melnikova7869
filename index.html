@@ -1,246 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body class="gets">
-    <header>
-        <h1>Sait</h1>  
-        <div class="logo">
-            <img
-                    class="image"
-                    src="Logo.png"
-                    alt="Картинка для 2 блока"> 
+
+<body class="body">
+    <header class="header">
+        <div class="wrapper">
+            <a href="#" class="header__logo logo"><img src="Logo.png" alt="логотип" class="logo__image"></a>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Продукт</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Инструкция</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Обучение</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Работа</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header__login">Логин</a>
         </div>
-        <nav>
-            <ul>
-                <a href="#">Продукт</a>
-                <a href="#">Варианты использования</a>
-                <a href="#">Выучиться</a>
-                <a href="#">О нас</a>
-                <a href="#">Работа</a>
-            </ul>
-        </nav>
-            <div>  
-                <button style="background-color: grey;" name="button">Логин</button>
-            </div>    
     </header>
     <main>
         <section>
-            <div class="fonk">
-                <p>Самый простой простой способ начать с DAO</p>
+            <div class="wrapper">
+                <h2 class="h2_1">Самый простой простой способ начать с DAO</h2>
+                <p class="Tekst_h2">Всё в одной платформе для запуска, управление и развитие децентрализованной
+                    автономной
+                    организации</p>
+                <button class="dif_button1">Начать </button>
             </div>
-            <p class="mol">Всё в одной платформе для запуска, управление и развитие децентрализованной автономной организации</p>
-            <div class="pol">
-                <button class="rek" style="background-color: yellow;" >Начать </button>
-            </div>    
-        </section>
-        <section class="fedos">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.6" d="M2 1.5L12 10L22.5 1.5" stroke="#425870" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M2 14L12 22.5L22.5 14" stroke="#425870" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>                
+            <svg class="strelki" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.6" d="M2 1.5L12 10L22.5 1.5" stroke="#425870" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M2 14L12 22.5L22.5 14" stroke="#425870" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
         </section>
         <section>
-            <h3 class="lom">Готовы ко всем проектам</h3>
-            <div class="s">
-                <button class="a" name="button">Инвестиции DAO</button>
-                <button class="b" name="button">Стартап DAO</button>
-                <button class="c" name="button">Сервис DAO</button>
-                <button class="d" name="button">Сообщество DAO</button>
-                <button class="f" name="button">Влияние DAO</button>
-                <button class="g" name="button">DeFi DAO</button>
-                <button class="h" name="button">Другое</button>
-            </div>
-            <div>
-                <img
-                    class="image"
-                    src="Frame 5535.png"
-                    alt="Картинка для 2 блока">
-            </div>
-            <div>
+            <div class="wrapper">
+                <h2 class="lom">Готовы ко всем проектам</h2>
+                <div class="s">
+                    <button class="a" name="button">
+                        <p class="a1">Инвестиции DAO</p>
+                    </button>
+                    <button class="b" name="button">
+                        <p class="b1">Стартап DAO</p>
+                    </button>
+                    <button class="c" name="button">
+                        <p class="c1">Сервис DAO</p>
+                    </button>
+                    <button class="d" name="button">
+                        <p class="d1">Сообщество DAO</p>
+                    </button>
+                    <button class="f" name="button">
+                        <p class="f1">Влияние DAO</p>
+                    </button>
+                    <button class="g" name="button">
+                        <p class="g1">DeFi DAO</p>
+                    </button>
+                    <button class="h" name="button">
+                        <p class="h1">Другое</p>
+                    </button>
+                </div>
+                <img class="image" src="Frame 5535.png" alt="Картинка для 2 блока">
                 <button name="batton">+1000 запущено на SuperDao</button>
             </div>
         </section>
         <section>
-            <h2>Сделан для полного погружения</h2>
-            <nav>
+            <div class="wrapper">
+                <h2>Сделан для полного погружения</h2>
                 <ul>
-                    <a href="#">Организация дизайн</a>
-                    <a href="#">Разработка смарт-контрактов</a>
-                    <a href="#">Сбор средств</a>
-                    <a href="#">Начало маркетинга</a>
-                    <a href="#">Участие в адаптации</a>
-                    <a href="#">Управление вкладчиками</a>
-                    <a href="#">DAO операции</a>
+                    <li><a href="#">Организация дизайн</a></li>
+                    <li><a href="#">Разработка смарт-контрактов</a></li>
+                    <li><a href="#">Сбор средств</a></li>
+                    <li><a href="#">Начало маркетинга</a></li>
+                    <li><a href="#">Участие в адаптации</a></li>
+                    <li><a href="#">Управление вкладчиками</a></li>
+                    <li><a href="#">DAO операции</a></li>
                 </ul>
-            </nav>
+            </div>
         </section>
         <section>
-            <h2>Все инструменты в одном приложении</h2>
-            <a href="#">Членство NFT</a>
-            <a href="#">Сокровище</a>
-            <a href="#">Внимание</a>
-            <a href="#">Скрытность</a>
-            <a href="#">App Store</a>
-            <img
-                    class="image"
-                    src="1 NFT membership.png"
-                    alt="Картинка для 3 блока">     
-            <button name="button">Смотреть видео</button>
+            <div class="wrapper">
+                <h2>Все инструменты в одном приложении</h2>
+                <a href="#">Членство NFT</a>
+                <a href="#">Сокровище</a>
+                <a href="#">Внимание</a>
+                <a href="#">Скрытность</a>
+                <a href="#">App Store</a>
+                <img class="image" src="1 NFT membership.png" alt="Картинка для 3 блока">
+                <button name="button">Смотреть видео</button>
+            </div>
         </section>
         <section>
-            <h2>Работай с</h2>
-            <div>
+            <div class="wrapper">
+                <h2>Работай с</h2>
                 <a href="#">Ethereum</a>
-            </div>
-            <div>
                 <a href="#">Polygon</a>
-            </div>    
-            <div>
                 <a href="#">Gnosis Safe</a>
-            </div>
-            <div>    
                 <a href="#">Snapshot</a>
-            <div>    
                 <a href="#">ENS</a>
-            </div>
-            <div>    
                 <a href="#">OpenSea</a>
-            </div>      
+            </div>
         </section>
         <section>
-            <h2>Помощь на каждом шагу</h2>
-            <div class="image1">
-                <img
-                src="Frame 5733.png"
-                alt="Картинка для 3 блока">
+            <div class="wrapper">
+                <h2>Помощь на каждом шагу</h2>
+                <img src="Frame 5733.png" alt="Картинка для 3 блока">
+                <ul>
+                    <li><a href="#">База знаний</a></li>
+                    <li><a href="#">Чат поддержки</a></li>
+                    <li><a href="#">Учебные пособия</a></li>
+                    <li><a href="#">Разработка шаблонов для интеллектуальных контактов</a></li>
+                    <li><a href="#">Образовательные события</a></li>
+                    <li><a href="#">Руководство</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="#">База знаний</a>
-            </div>
-            <div>
-                <a href="#">Чат поддержки</a>
-            </div>    
-            <div>
-                <a href="#">Учебные пособия</a>
-            </div>
-            <div>    
-                <a href="#">Разработка шаблонов для интеллектуальных контактов</a>
-            <div>    
-                <a href="#">Образовательные события</a>
-            </div>
-            <div>    
-                <a href="#">Руководство</a>
-            </div>      
         </section>
         <section>
-            <h2>Еженедельный дайджест</h2>
-            <p>Последние новости в DAOs и Web3</p>
-            <form action="" method="get">
-                <p>
-                  <label for="email">Введите email:</label>
-                  <input type="email" name="email" id="email" required>
-                </p>
-                <button type="submit">Подписаться</button>
-            </form>
+            <div class="wrapper">
+                <h2>Еженедельный дайджест</h2>
+                <p>Последние новости в DAOs и Web3</p>
+                <form action="" method="get">
+                    <label for="email">Введите email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
         </section>
         <section>
-            <p>При поддержке</p>
-            <div class="container">
+            <div class="wrapper">
+                <p>При поддержке</p>
                 <a href="#">ALLIANCE</a>
-            </div>
-            <div class="container">
                 <a href="#">DIGITAL</a>
-            </div>
-            <div>
                 <a href="#">ONE BLOCK</a>
-            </div>
-            <div>
                 <a href="#">fika</a>
-            </div>
-            <div>
                 <a href="#">Pear</a>
-            </div>
-            <div>
                 <a href="#">GREAT OAKS</a>
-            </div>
-            <div>
                 <a href="#">NORWEST</a>
-            </div>
-            <div>
                 <a href="#">Fifty Years</a>
-            </div>
-            <div>    
                 <a href="#">CIRCLE</a>
-            </div>
-            <div>
                 <a href="#">Protocol Labs</a>
-            </div>        
+            </div>
         </section>
         <section>
-            <h3>Press</h3>
+            <div class="wrapper">
+                <h2>Press</h2>
                 <button name="button">Увидеть все</button>
-            <div class="kol">
-                <a href="#">Decrypt<p>Superdao тратит $10.5 миллионов на создание универсальной платформы DAO</p>
-                    <p>Superdao стремится облегчить онлайн-сообществам создание и запуск DAO</p>
-                    <p>Почитайте</p></a>
+                <div class="kol">
+                    <a href="#">Decrypt<p>Superdao тратит $10.5 миллионов на создание универсальной платформы DAO</p>
+                        <p>Superdao стремится облегчить онлайн-сообществам создание и запуск DAO</p>
+                        <p>Почитайте</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">Blockworks<p> Y Combinator Web3 привлекает рекордное количество стартапов DAO</p>
+                        <p>Количество стартапов DAO и связанные с ними стартапы составили "подавляющее количество
+                            кандидатов" для когорты акселератора Web3 в этом году</p>
+                        <p>Почитайте</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">TC Techcruch<p>VC-ста DAO, поддерживаемый VC, соревнуются, чтобы определить, что такое
+                            DAO
+                            на самом деле</p>
+                        <p>Не все "децентрализованные автономные организации" являются автоновными или
+                            децентрализованными
+                        </p>
+                        <p>Почитайте</p>
+                    </a>
+                </div>
             </div>
-            <div>        
-                <a href="#">Blockworks<p> Y Combinator Web3 привлекает рекордное количество стартапов DAO</p>
-                    <p>Количество стартапов DAO и связанные с ними стартапы составили "подавляющее количество кандидатов" для когорты акселератора Web3 в этом году</p>
-                    <p>Почитайте</p></a>
-            </div>
-            <div>        
-                <a href="#">TC Techcruch<p>VC-ста DAO, поддерживаемый VC, соревнуются, чтобы определить, что такое DAO на самом деле</p>
-                    <p>Не все "децентрализованные автономные организации" являются автоновными или децентрализованными</p>
-                    <p>Почитайте</p></a>
-            </div>         
         </section>
         <section>
-            <h3>Podcasts</h3>
+            <div class="wrapper">
+                <h3>Podcasts</h3>
                 <button name="button">Увидеть все</button>
-            <div>
-                <a href="#">КАРТИНКА<p>Понимание DAOs с Юрием Лифшитс</p>
-                    <p>Подкаст The Pomp от Энтони Помплиано</p>
-                    <p>Послушайте</p></a>
+                <div>
+                    <a href="#">КАРТИНКА<p>Понимание DAOs с Юрием Лифшитс</p>
+                        <p>Подкаст The Pomp от Энтони Помплиано</p>
+                        <p>Послушайте</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">КАРТИНКА<p>Все, что вам нужно знать о DAOs с Tury Lifshits от Superdao</p>
+                        <p>Неудержимый подкаст (Джош Гордон)</p>
+                        <p>Посмотрите</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">КАРТИНКА<p>Юрий Литшиц-Superdao: "Spopify" для DAOs</p>
+                        <p>Zima Red от Эндрю Стейнволда</p>
+                        <p>Послушайте</p>
+                    </a>
+                </div>
             </div>
-            <div>        
-                <a href="#">КАРТИНКА<p>Все, что вам нужно знать о DAOs с Tury Lifshits от Superdao</p>
-                    <p>Неудержимый подкаст (Джош Гордон)</p>
-                    <p>Посмотрите</p></a>
-            </div>
-            <div>        
-                <a href="#">КАРТИНКА<p>Юрий Литшиц-Superdao: "Spopify" для DAOs</p>
-                    <p>Zima Red от Эндрю Стейнволда</p>
-                    <p>Послушайте</p></a>
-            </div>         
         </section>
-    </main>    
-        <footer>
-            <h2>Superdao<h2>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <img class="fut" src="Logo.png" alt="Картинка для 3 блока">
             <nav>
                 <ul>
-                    <a href="#">О нас</a>
-                    <a href="#">Работа</a>
-                    <a href="#">Юрист</a>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Работа</a></li>
+                    <li><a href="#">Юрист</a></li>
                 </ul>
             </nav>
-            <div>
-                <a href="#">Twiter</a>
-            </div>
-            <div>    
-                <a href="#">Telegram</a>
-            </div>    
-            <div>
-                <a href="#">YouTube</a>
-            </div>
-            <div>
-                <a href="#">Discord</a>
-            </div>
-        </footer>       
+            <a href="#">Twiter</a>
+            <a href="#">Telegram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Discord</a>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,35 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Onest:wght@700&display=swap');
 
-:root{
+:root {
     --primary-color: pink;
     --second-color: green;
     --holl-collor: black;
     --k-color: white;
-    --l-color: blue;
-    --1--color:purple light;
-    --2--color:purple;
-    --3--color:yellow light;
-    --4--color:yellow;
-    --5--color:orange;
-    --6--color:grey;
-    
+    --9--color: blue;
+    --1--color: purple light;
+    --2--color: purple;
+    --3--color: yellow light;
+    --4--color: yellow;
+    --5--color: orange;
+    --6--color: grey;
+    --7--color: pink;
+    --8--color: rgb(227, 112, 227);
+    --10--color: rgb(48, 45, 45);
+
+
 }
 
 h1 {
-    color:var(--holl-collor)
-  }
-
-.gets {
-    background-color:var(--holl-collor);
-}  
-
-h3 {
-    color: var(--k-color);
+    color: var(--holl-collor)
 }
 
+.body {
+    background-color: var(--holl-collor);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo__image {
+    width: 100%;
+    max-width: 100px;
+}
+
+.header__logo logo {
+    font-size: 10px;
+}
+
+.navigation__item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.header__login {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
 
 h2 {
     color: var(--k-color)
+}
+
+.h2_1 {
+    font-family: "Montserrat", sans-serif;
+    margin: 20px auto;
+    width: 100%;
 }
 
 a {
@@ -40,98 +75,167 @@ a {
     background-color: var(--l-color)
 }
 
-p{
+p {
     color: var(--k-color)
 }
 
 .fonk {
     font-family: 'Onest', sans-serif;
-    padding: 2px 320px;
-    font-size: 28px
+    font-size: 28px;
+    padding: 0 22rem
 }
 
-.kip{
+.kip {
     background-color: (--3--color);
     padding: 1px 80px;
     font-size: 10px
 }
 
-.rek{
+.button_1 {
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 70px;
-    font-size: 13px
+    margin: 0 auto;
+    font-size: 20px;
 }
 
-.pol{
+.dif_button1 {
     padding: 10px 560px
 }
 
-.mol{
-    font-family: "Montserrat", sans-serif;
-    padding: 2px 430px;
-    font-size: 13px 
+.strelki {
+    margin: 0 auto;
+    width: 100%;
 }
 
-.fedos{
-    padding: 27px 645px
-}
-
-.lom{
+.lom {
     font-family: 'Onest', sans-serif;
     padding: 2px 550px;
     font-size: 28px
 }
 
-.image{
-    padding: 2px 130px ;
-    font-size: 2px ;
-    }  
-.a{
-    color: var()
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.image {
+    padding: 2px 130px;
+    font-size: 2px;
+}
 
-.b{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.a {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
 
-.c{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.a1 {
+    color: var(--7--color);
+}
 
-.d{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.b {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
 
-.f{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.b1 {
+    color: var(--4--color);
+}
 
-.g{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.c {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
 
-.f{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.c1 {
+    color: var(--2--color);
+}
 
-.h{
-    padding: 2px 30px ;
-    font-size: 18px  
-}    
+.d {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
 
-.s{
-    padding: 25px 30px ;
+.d1 {
+    color: var(--9--color);
+}
+
+.f {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
+
+.f1 {
+    color: var(--9--color);
+}
+
+.g {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
+
+.g1 {
+    color: var(--8--color);
+}
+
+.h {
+    padding: 2px 30px;
+    font-size: 18px;
+    background-color: var(--holl--color);
+}
+
+.h1 {
+    color: var(--6--color);
+}
+
+.s {
+    padding: 25px 30px;
     font-size: 10px;
-}    
+}
 
-.image1{
-    padding: 10px 200px ;
+.image1 {
+    padding: 10px 200px;
+}
+
+.fut {
+    width: 500px;
+    margin: 0 auto;
+    /* max-width: 40px; */
+    padding: 0 1rem;
+}
+
+.a2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 2px 30px;
+}
+
+.b2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 2px 30px;
+}
+
+.c2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 2px 30px;
+}
+
+.d2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 2px 30px;
+}
+
+.f2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 2px 30px;
+}
+
+.Tekst_h2 {
+    font-family: "Montserrat", sans-serif;
+    margin: 20px auto;
+    width: 50%;
+    color: var(--k-color);
 }
