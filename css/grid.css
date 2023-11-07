@@ -1,4 +1,4 @@
-.grid-container {
+/*.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
@@ -18,3 +18,30 @@
 .card:nth-child(2n+1) {
     background-color: red;
 }
+*/
+.grid-container {
+    display: grid;
+    /* Три колонки */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Два ряда */
+    grid-template-rows: 1fr 1fr;
+    /* Автоматическое размещение в ряд */
+    grid-auto-flow: row;
+    /* Отступы между ячейками */
+    gap: 20px;
+}
+  
+.card {
+    /* Занимает один ряд и
+    растягивается на две колонки */
+    grid-column: span 2;
+}
+
+  .card:nth-child(2n) {
+    background-color: aqua;
+}
+
+.card:nth-child(2n+1) {
+    background-color: red;
+}
+  
