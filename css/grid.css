@@ -21,24 +21,14 @@
 */
 .grid-container {
     display: grid;
-    /* Три колонки */
-    grid-template-columns: 1fr 1fr 1fr;
-    /* Два ряда */
-    grid-template-rows: 1fr 1fr;
-    /* Автоматическое размещение в ряд */
-    grid-auto-flow: row;
-    /* Отступы между ячейками */
-    gap: 20px;
-}
-  
-.card {
-    /* Занимает один ряд и
-    растягивается на две колонки */
-    grid-column: span 2;
-}
+    grid-template-columns: 300px 500px;
+    grid-template-rows: 200px 350px 250px 100px;
+    gap: 10px;
+} 
 
   .card:nth-child(2n) {
     background-color: aqua;
+    grid-template-columns: 400px 300px;
 }
 
 .card:nth-child(2n+1) {

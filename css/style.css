@@ -25,7 +25,7 @@ h1 {
 }
 
 .body {
-    background-color: var(--holl-collor);
+    background-color: black;
 }
 
 html {
@@ -112,7 +112,31 @@ a {
     font-family: "Montserrat", sans-serif;
     width: 100%;
     max-width: 200px;
-    font-size: 15px;
+    width: 360px;
+    height: 380px;
+    padding: 20px 20px;
+}
+
+.Tekst_decrypt_img {
+    padding: 46px 0px;
+}
+
+.Tekst_decrypt_img2{
+    padding: 0px 0px;
+}
+
+.Tekst_decrypt_img3{
+    padding: 40px 0px;
+}
+
+.bol {
+    font-size: 22px;
+    color: black;
+}
+
+.mal {
+    font-size: 17px;
+    color: black;
 }
 
 .Tekst_blockworks {
@@ -121,7 +145,9 @@ a {
     font-family: "Montserrat", sans-serif;
     width: 100%;
     max-width: 200px;
-    font-size: 15px;
+    width: 360px;
+    height: 380px;
+    padding: 20px 20px;
 }
 
 .Tekst_TC_Techcruch {
@@ -130,7 +156,9 @@ a {
     font-family: "Montserrat", sans-serif;
     width: 100%;
     max-width: 200px;
-    font-size: 15px;
+    width: 360px;
+    height: 380px;
+    padding: 20px 20px;
 }
 
 p {
@@ -435,9 +463,10 @@ span .chlenstvo_nft {
     font-size: 29px;
 }
 
-.log1 img {
+/*.log1 img {
     height: 130px;
-}
+    width: 270px;
+} */
 
 .img-and-txt {
     display: flex;
@@ -446,27 +475,37 @@ span .chlenstvo_nft {
     gap: 5px;
 }
 
+/*.kartinki_grid {
+    display: grid;
+  gap: 50px;
+  height: 100vh;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+} */
+
 .h2_Press {
+    display: block;
     width: 100%;
     max-width: 1400px;
     margin: 40px auto;
     padding: 0 1rem;
-    text-align: center;
-    font-size: 29px;
+    font-size: 60px;
 }
 
 .kartinki-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .kartinki div {
     border: 2px;
-    border-radius: 6px;
+    border-radius: 18px;
     margin: 10px auto;
     margin-right: 6px;
+    margin-left: 6px;
 }
 
 .kartinki .Tekst_decrypt {
@@ -480,6 +519,33 @@ span .chlenstvo_nft {
     padding: 0 1rem;
     text-align: center;
     font-size: 30px;
+}
+.kartinki_div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    }
+
+.kartinki_div2 img {
+    
+}
+
+.kartinki2 div {
+    border: 2px;
+    border-radius: 18px;
+    margin: 10px auto;
+    margin-right: 6px;
+    margin-left: 6px;
+}   
+
+.kartinki2_a {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(75, 73, 73);
+    width: 100%;
+    /*max-width: 700px; */
+    padding: 0 1rem;
+    font-size: 20px;
 }
 
 .tekst_podcast {
@@ -522,12 +588,13 @@ span .chlenstvo_nft {
 }
 
 .kartinki_a {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(75, 73, 73);
-    width: 100%;
-    max-width: 700px;
-    padding: 0 1rem;
-    font-size: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.kartinki2_a {
+    display: flex;
+    justify-content: end;
 }
 
 footer nav ul {
@@ -594,6 +661,10 @@ footer ul {
     align-content: stretch;
     gap: .8em;
     max-width: 100%;
+}
+
+/*.li_log {
+    flex-grow: 0;
 }
 
 /* .log1-img {
