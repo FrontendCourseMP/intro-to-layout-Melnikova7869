@@ -21,17 +21,63 @@
 */
 .grid-container {
     display: grid;
-    grid-template-columns: 300px 500px;
-    grid-template-rows: 200px 350px 250px 100px;
-    gap: 10px;
-} 
-
-  .card:nth-child(2n) {
-    background-color: aqua;
     grid-template-columns: 400px 300px;
+    grid-template-rows: 50px 350px 100px 100px;
+    gap: 10px;
 }
 
-.card:nth-child(2n+1) {
+.card_4 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.card_1 {
+    background-color: white;
+}
+
+.card_2 {
+    background-color: yellow;
+}
+
+.card_3 {
     background-color: red;
 }
-  
+
+.child_card_1 {
+    background-color: yellow;
+}
+
+.div_child_card_1 {
+    background-color: white;
+}
+
+.div_child_card_2 {
+    background-color: white;
+}
+
+.child_card_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 175px;
+    gap: 10px;
+}
+
+.child_card_5_1 {
+    background-color: black;
+}
+
+.child_card_5_2 {
+    background-color: white;
+}
+
+.card_5 {
+    display: grid;
+    grid-template-columns: 0px 100px 300px;
+    grid-template-rows: 100px;
+}
+
+.card_6 {
+    background-color: white;
+}
