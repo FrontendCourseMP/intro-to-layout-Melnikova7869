@@ -27,17 +27,19 @@
     list-style: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h1 {
     color: var(--holl-collor)
 }
 
 .body {
+    font-family: 'Montserrat', sans-serif;
     background-color: black;
 }
 
-html {
-    font-size: 62.5%;
-}
 
 .header .wrapper {
     display: flex;
@@ -95,6 +97,10 @@ html {
     border-radius: 6px;
     background-position: center;
     background-color: rgb(47, 47, 47);
+}
+
+.header__btn{
+    display: none;
 }
 
 h2 {
@@ -765,4 +771,23 @@ footer ul {
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
+}
+
+@media (width <= 520px) {
+    .header__btn{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        border-style: none;
+        align-self: center;
+    }
+    .header__login{
+        display: none;
+    }
+    .header__navigation{
+        display: none;
+    }
+    .header .wrapper{
+        justify-content: space-between;
+    }
 }
