@@ -98,13 +98,11 @@ h1 {
 }
 
 .logo__image {
-    height: 30px;
     width: 190px;
 }
 
 .header__login {
     width: 59px;
-    height: 27px;
     text-align: center;
     margin: 0 auto;
     padding: 7px 5px;
@@ -134,25 +132,29 @@ a {
     text-decoration: none;
 }
 
+.kartinki .Tekst_decrypt {
+    background-color: rgb(155, 155, 239);
+}
+
 .Tekst_decrypt {
-    display: block;
-    background-color: rgb(119, 119, 240);
+    /*display: block;*/
+    position: relative;
     width: 360px;
-    height: 380px;
     padding: 20px 20px;
 }
 
-.Tekst_decrypt_img {
-    padding: 46px 0px;
+.Tekst_decrypt:nth-child(1) {
+    background-color: rgb(119, 119, 240);
 }
 
-.Tekst_decrypt_img2 {
-    padding: 46px 0px;
+.Tekst_decrypt:nth-child(2) {
+    background-color: rgb(184, 119, 240);
 }
 
-.Tekst_decrypt_img3 {
-    padding: 40px 0px;
+.Tekst_decrypt:last-child {
+    background-color: rgb(213, 213, 90);
 }
+
 
 .bol {
     font-size: 1.9rem;
@@ -168,15 +170,18 @@ a {
 .Tekst_blockworks {
     display: block;
     width: 360px;
-    height: 380px;
     padding: 20px 20px;
+}
+
+.Tekst_decrypt_img::before {
+    content: "read";
+    color: black;
 }
 
 .Tekst_TC_Techcruch {
     display: block;
     background-color: rgb(213, 213, 90);
     width: 360px;
-    height: 380px;
     padding: 20px 20px;
 }
 
@@ -184,10 +189,6 @@ p {
     color: var(--k-color)
 }
 
-/*.button_1 {
-    margin: 0 auto;
-    font-size: 20px;
-}*/
 
 .div_a1 {
     display: block;
@@ -228,7 +229,11 @@ p {
     max-width: 700px;
     margin: 0 auto;
     padding: 0 1rem;
-    font-size: 10px;
+    font-size: 2rem;
+}
+
+.min_image {
+    display: none;
 }
 
 .a1 {
@@ -277,12 +282,13 @@ p {
 
 
 .div_button_1000 {
+    position: absolute;
+    bottom: -420px;
     border: 3px;
     border-radius: 6px;
     background-color: orange;
     color: black;
     font-size: 1.4rem;
-    text-align: center;
     padding: 6px;
 }
 
@@ -356,10 +362,6 @@ p {
     color: var(--11--color);
 }
 
-.section_otstup {
-    margin: 150px auto;
-}
-
 .div_knopki button {
     padding: 2px 30px;
     font-size: 1.8rem;
@@ -389,7 +391,6 @@ span {
 
 .tekst_2 {
     width: 100%;
-    height: 320px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -479,14 +480,11 @@ span {
     border: 2px;
     border-radius: 6px;
     background-color: rgb(59, 59, 63);
-    /*font-size: 20px;*/
     width: 400px;
-    height: 40px;
 }
 
 .button_button {
     width: 160px;
-    height: 40px;
     background-color: rgb(239, 177, 252);
     border: 2px;
     border-radius: 6px;
@@ -549,10 +547,6 @@ span {
     margin-left: 6px;
 }
 
-.kartinki .Tekst_decrypt {
-    background-color: rgb(155, 155, 239);
-}
-
 .h2_podcasts {
     width: 100%;
     max-width: 1400px;
@@ -595,7 +589,6 @@ span {
     display: block;
     background-color: rgb(59, 59, 63);
     width: 330px;
-    height: 360px;
     font-size: 1rem;
 }
 
@@ -617,15 +610,12 @@ span {
     display: block;
     background-color: rgb(59, 59, 63);
     width: 330px;
-    height: 360px;
     font-size: 1.2rem;
 }
 
 .tekst_podcast3 {
     display: block;
     background-color: rgb(59, 59, 63);
-    width: 330px;
-    height: 360px;
     font-size: 1.2rem;
 }
 
@@ -642,12 +632,13 @@ span {
 
 footer nav ul {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     color: rgb(75, 73, 73);
     width: 100%;
+    gap: 13px;
     max-width: 700px;
-    padding: 0 1rem;
-    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
 }
 
 footer ul {
@@ -666,13 +657,13 @@ footer ul {
 }
 
 .smotret_video {
-    display: block;
+    display: flex;
+    align-items: center;
     background-color: rgb(90, 90, 53);
-    margin-right: 6px;
     width: 100%;
-    max-width: 200px;
+    max-width: 170px;
     margin: 40px auto;
-    padding: 10px 2px;
+    padding: 0 12px;
     border: 2px;
     border-radius: 6px;
     background-position: center;
