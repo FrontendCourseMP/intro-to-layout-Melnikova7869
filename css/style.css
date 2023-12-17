@@ -1,27 +1,35 @@
 /* mukta-500 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Mukta';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/mukta-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* mukta-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/mukta-v14-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mukta-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Mukta';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/mukta-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* mukta-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/mukta-v14-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mukta-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Mukta';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/mukta-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('../fonts/mukta-v14-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 
 :root {
@@ -112,7 +120,7 @@ h1 {
     background-color: rgb(47, 47, 47);
 }
 
-.header__btn{
+.header__btn {
     display: none;
 }
 
@@ -137,11 +145,20 @@ a {
 }
 
 .Tekst_decrypt {
-    /*display: block;*/
     position: relative;
     width: 360px;
     padding: 20px 20px;
 }
+
+.read {
+    color:black;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.Tekst_decrypt_img {
+    position: absolute;
+} 
 
 .Tekst_decrypt:nth-child(1) {
     background-color: rgb(119, 119, 240);
@@ -167,22 +184,8 @@ a {
     color: black;
 }
 
-.Tekst_blockworks {
-    display: block;
-    width: 360px;
-    padding: 20px 20px;
-}
-
-.Tekst_decrypt_img::before {
-    content: "read";
-    color: black;
-}
-
-.Tekst_TC_Techcruch {
-    display: block;
-    background-color: rgb(213, 213, 90);
-    width: 360px;
-    padding: 20px 20px;
+.kartinki_div2 {
+    position: relative;
 }
 
 p {
@@ -277,13 +280,14 @@ p {
 .grid_image {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: safe center;
 }
 
 
 .div_button_1000 {
     position: absolute;
-    bottom: -420px;
+    bottom: -15px;
     border: 3px;
     border-radius: 6px;
     background-color: orange;
@@ -292,7 +296,7 @@ p {
     padding: 6px;
 }
 
-.wrapper h1{
+.wrapper h1 {
     display: flex;
     justify-content: baseline;
 }
@@ -381,6 +385,15 @@ p {
     font-size: 4rem;
 }
 
+.image_video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
 span {
     margin: 20px auto;
     width: 100%;
@@ -396,6 +409,7 @@ span {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
     font-size: 1.9rem;
     font-weight: bold;
 }
@@ -465,6 +479,8 @@ span {
 .help_img {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 11px;
 }
 
@@ -473,8 +489,7 @@ span {
     border-radius: 12px;
 }
 
-.visually-hidden {
-}
+.visually-hidden {}
 
 .button_subscribe {
     border: 2px;
@@ -563,7 +578,7 @@ span {
     gap: 40px;
 }
 
-.img_logo_tekst_podcast{
+.img_logo_tekst_podcast {
     width: 30%;
 }
 
@@ -597,9 +612,9 @@ span {
     font-size: 1.2rem;
 }
 
-.T_mal{
+.T_mal {
     font-size: 1rem;
-    padding: 20px  0px;
+    padding: 20px 0px;
 }
 
 .img_srtelki {
@@ -619,10 +634,19 @@ span {
     font-size: 1.2rem;
 }
 
+.kartinki_grid {
+    position: relative;
+}
+
 
 .kartinki_a {
     display: flex;
     justify-content: end;
+}
+
+.kartinki_span {
+    text-align: end;
+    position: absolute;
 }
 
 .kartinki2_a {
@@ -702,22 +726,26 @@ footer ul {
 }
 
 @media (max-width: 520px) {
-    .header__btn{
+    .header__btn {
         display: flex;
         background-color: transparent;
         border: none;
         border-style: none;
         align-self: center;
     }
-    .header__login{
+
+    .header__login {
         display: none;
     }
-    .header__navigation{
+
+    .header__navigation {
         display: none;
     }
-    .header .wrapper{
+
+    .header .wrapper {
         justify-content: space-between;
     }
+
     .min_image {
         display: flex;
         background-color: transparent;
@@ -725,6 +753,7 @@ footer ul {
         border-style: none;
         align-self: center;
     }
+
     .image {
         display: none;
     }
