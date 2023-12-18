@@ -550,6 +550,7 @@ span {
 .kartinki-div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
@@ -601,10 +602,10 @@ span {
 }
 
 .tekst_podcast {
-    display: block;
+    position: relative;
     background-color: rgb(59, 59, 63);
     width: 330px;
-    font-size: 1rem;
+    padding: 1rem;
 }
 
 .T_bol {
@@ -621,32 +622,17 @@ span {
     padding: 80px 0px;
 }
 
-.tekst_podcast2 {
-    display: block;
-    background-color: rgb(59, 59, 63);
-    width: 330px;
-    font-size: 1.2rem;
-}
-
-.tekst_podcast3 {
-    display: block;
-    background-color: rgb(59, 59, 63);
-    font-size: 1.2rem;
-}
-
 .kartinki_grid {
     position: relative;
 }
 
 
 .kartinki_a {
-    display: flex;
-    justify-content: end;
+    position: relative;
 }
 
 .kartinki_span {
-    text-align: end;
-    position: absolute;
+    padding: 1rem;
 }
 
 .kartinki2_a {
