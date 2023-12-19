@@ -320,6 +320,11 @@ p {
     border-radius: 9px;
 }
 
+.a_more {
+    display: flex;
+    gap: 5px;
+}
+
 .image1 {
     display: block;
     width: 100%;
@@ -547,12 +552,21 @@ span {
     font-size: 4.5rem;
 }
 
+.kartinki {
+    position: relative;
+}
+
 .kartinki-div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    
+}
+
+.kartinki_img {
+    position: absolute;
 }
 
 .kartinki div {
@@ -572,34 +586,6 @@ span {
     font-size: 4.7rem;
 }
 
-.kartinki_div2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-}
-
-.img_logo_tekst_podcast {
-    width: 30%;
-}
-
-
-
-.kartinki2 div {
-    border: 2px;
-    border-radius: 18px;
-    margin: 10px auto;
-    margin-right: 6px;
-    margin-left: 6px;
-}
-
-.kartinki2_a {
-    color: rgb(75, 73, 73);
-    width: 100%;
-    /*max-width: 700px; */
-    padding: 0 1rem;
-    font-size: 1.2rem;
-}
 
 .tekst_podcast {
     position: relative;
@@ -622,22 +608,14 @@ span {
     padding: 80px 0px;
 }
 
-.kartinki_grid {
-    position: relative;
-}
-
-
 .kartinki_a {
+    position: absolute;
+    right: -800px;
     position: relative;
 }
 
 .kartinki_span {
     padding: 1rem;
-}
-
-.kartinki2_a {
-    display: flex;
-    justify-content: end;
 }
 
 footer nav ul {
@@ -709,9 +687,16 @@ footer ul {
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1200px) {
+    .kartinki_a {
+        position: absolute;
+    }
+}
+
+@media (max-width: 760px) {
     .header__btn {
         display: flex;
         background-color: transparent;
@@ -741,6 +726,9 @@ footer ul {
     }
 
     .image {
+        display: none;
+    }
+    .kartinki_a {
         display: none;
     }
 }
