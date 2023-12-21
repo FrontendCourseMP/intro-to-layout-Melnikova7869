@@ -33,18 +33,18 @@
                     to start a DAO</h2>
                 <p class="Tekst_h2">An all-in-one platform to start, manage and grow
                     a decentralized autonomous organization</p>
-                <a class="div_a1">Get started</a>
+                <a href="#get_started" class="div_a1">Get started</a>
             </div>
-            <svg class="strelki" width="24" height="25" viewBox="0 0 24 25" fill="none"
+            <a href="#get_started" ><svg class="strelki" width="24" height="25" viewBox="0 0 24 25" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.6" d="M2 1.5L12 10L22.5 1.5" stroke="#425870" stroke-width="2.5"
                     stroke-linecap="round" />
                 <path d="M2 14L12 22.5L22.5 14" stroke="#425870" stroke-width="2.5" stroke-linecap="round" />
-            </svg>
+            </svg></a>
         </section>
         <section>
             <div class="wrapper">
-                <h2 class="h2_2">Ready for every project</h2>
+                <h2 id="get_started" class="h2_2">Ready for every project</h2>
                 <div class="div_readyfor">
                     <ul class="div_readyfor_ul">
                         <li><a href="#" class="a1">Investment DAO</a></li>
@@ -70,7 +70,7 @@
                     <li><a href="#">Organisation design</a></li>
                     <li><a href="#">Smart contract development</a></li>
                     <li><a href="#">Fundraising</a></li>
-                    <li><a href="#" class="tekst_drugoy">Launch marketing</a></li>
+                    <li><a href="#">Launch marketing</a></li>
                     <li><a href="#">Member onboarding</a></li>
                     <li><a href="#">Contributor management</a></li>
                     <li><a href="#">DAO operations</a></li>
@@ -144,11 +144,10 @@
                 <div class="regestr">
                     <h2 class="h2_every">Weekly digest</h2>
                     <p class="tekst_3">Latest news in DAOs and Web3</p>
-                    <form action="" method="get">
-                        <label>
-                            <span class="visually-hidden">Enter your email</span>
-                            <input class="button_subscribe" type="text" placeholder="Your email">
+                    <form class="form_medua" action="//httpbin.org/post" method="post">
+                        <label for="mail">
                         </label>
+                        <input class="form" type="email" placeholder="Your email" id="mail" name="user_email"/>
                         <button class="button_button" type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -215,7 +214,7 @@
         </section>
         <section class="kartinki">
             <div class="wrapper">
-                    <h2 class="h2_podcasts">Podcasts</h2>
+                    <h2 class="h2_Press">Podcasts</h2>
                     <a href="#" class="kartinki_a"><span class="kartinki_span">See all</span><img class="kartinki_img" src="img/see_all.svg" alt="k"></a>
                     <div class="kartinki-div">
                         <div class="tekst_podcast">
@@ -258,18 +257,19 @@
             <div class="footer">
                 <img class="fut" src="img/logo.svg" alt="Картинка для 3 блока">
                 <nav>
-                    <ul>
+                    <ul class="footer_a">
                         <li><a class="footer_nav_ul" href="#">About</a></li>
                         <li><a href="#">Jobs</a></li>
                         <li><a href="#">Legal</a></li>
                     </ul>
                 </nav>
-                <ul>
+                <ul class="footer_sety">
                     <li><a href="#"><img src="img/Frame 5689.svg" alt="твитер"></a></li>
                     <li><a href="#"><img src="img/Frame 5609.svg" alt="телеграмм"></a></li>
                     <li><a href="#"><img src="img/Frame 5609 (1).svg" alt="ютуб"></a></li>
                     <li><a href="#"><img src="img/discord_1 1.svg" alt="дискорд"></a></li>
                     <li><a href="grid.html">GRID</a></li>
+                    <li><a href="form.html">FORM</a></li>
                 </ul>
             </div>
         </div>
