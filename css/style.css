@@ -103,12 +103,10 @@ h1 {
 }
 
 .navigation__link:focus {
-    border-bottom: 1px solid;
     color: #dcbef4;
 }
 
 .navigation__link:hover {
-    border-bottom: 1px solid;
     color: yellow;
 }
 
@@ -146,6 +144,17 @@ h1 {
     opacity: 0.7;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 
 .header__btn {
     display: none;
@@ -162,6 +171,10 @@ h2 {
     font-size: 5rem;
 }
 
+.karusel {
+    overflow-x: hidden;
+}
+
 a {
     color: var(--k-color);
     text-decoration: none;
@@ -173,12 +186,27 @@ a {
 
 .Tekst_decrypt {
     position: relative;
-    width: 360px;
+    width: 320px;
     padding: 20px 20px;
+    border: 2px;
+    border-radius: 20px;
 }
 
-.Tekst_decrypt a:hover {
-    background: rgb(66, 65, 65);
+
+.a_Tekst_desrypt:visited {
+    color: white;
+}
+
+.a_Tekst_desrypt:focus {
+    color: #dcbef4;
+}
+
+.a_Tekst_desrypt:hover {
+    color: yellow;
+}
+
+.a_Tekst_desrypt:active {
+    color: #dcbef4;
 }
 
 .read {
@@ -299,8 +327,17 @@ p {
 }
 
 .h1 {
+    display: flex;
+    gap: 5px;
     color: var(--6--color);
 }
+
+
+
+:is(.a1, .b1, .c1, .d1, .f1, .g1, .h1):hover {
+    background: rgb(175, 174, 174);
+    opacity: 1;
+}    
 
 .div_readyfor {
     display: flex;
@@ -309,6 +346,26 @@ p {
     align-items: center;
     width: 100%;
     margin: 50px auto;
+}
+
+.div_readyfor_ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 120px;
+    max-width: 900px;
+    font-size: 1.6rem;
+}
+
+.div_readyfor li a {
+    background-color: rgb(56, 56, 65);
+    padding: 8px 26px;
+    border: 2px;
+    border-radius: 9px;
+    font-size: 2rem;
 }
 
 
@@ -340,35 +397,6 @@ p {
 .wrapper h1 {
     display: flex;
     justify-content: baseline;
-}
-
-.div_readyfor_ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 120px;
-    max-width: 900px;
-    font-size: 1.6rem;
-}
-
-.div_readyfor_ul a:hover {
-    background: rgb(194, 193, 193);
-}
-
-.div_readyfor li {
-    background-color: rgb(56, 56, 65);
-    padding: 8px 26px;
-    border: 2px;
-    border-radius: 9px;
-    font-size: 2rem;
-}
-
-.a_more {
-    display: flex;
-    gap: 5px;
 }
 
 .image1 {
@@ -408,26 +436,18 @@ p {
 }
 
 .tekst_1 a {
-    color: var(--6--color);
-}
-
-
-.tekst_1 a:visited {
-    color: var(--6--color);
+    color: rgb(87, 87, 87);
 }
 
 .tekst_1 a:focus {
-    border-bottom: 1px solid;
-    background: #dcbef4;
+    color: #dcbef4;
 }
 
 .tekst_1 a:hover {
-    border-bottom: 1px solid;
-    color: var(--11--color);
+    color: rgb(104, 131, 236);
 }
 
 .tekst_1 a:active {
-    background: #62a1dd;
     color: #dcbef4;
 }
 
@@ -484,23 +504,15 @@ span {
     color: rgb(87, 87, 87);
 }
 
-
-.tekst_2 a:visited {
-    color: var(--6--color);
-}
-
 .tekst_2 a:focus {
-    border-bottom: 1px solid;
-    background: #dcbef4;
+    color: #dcbef4;
 }
 
 .tekst_2 a:hover {
-    border-bottom: 1px solid;
-    color: yellow
+    color: yellow;
 }
 
 .tekst_2 a:active {
-    background: #62a1dd;
     color: #dcbef4;
 }
 
@@ -519,7 +531,7 @@ span {
 }
 
 .smotret_video span {
-    color: yellow;
+    color: #FFCF01;
     font-size: 2rem;
 }
 
@@ -551,12 +563,10 @@ span {
 }
 
 .c_img a:focus {
-    border-bottom: 1px solid;
     color: #dcbef4;
 }
 
 .c_img a:hover {
-    border-bottom: 1px solid;
     color: rgb(94, 94, 239)
 }
 
@@ -598,12 +608,10 @@ span {
 }
 
 .help_tekst a:focus {
-    border-bottom: 1px solid;
     color: #dcbef4;
 }
 
 .help_tekst a:hover {
-    border-bottom: 1px solid;
     color: rgb(94, 94, 239)
 }
 
@@ -750,6 +758,8 @@ span {
     background-color: rgb(59, 59, 63);
     width: 330px;
     padding: 1rem;
+    border: 2px;
+    border-radius: 20px;
 }
 
 .T_bol {
@@ -773,7 +783,6 @@ span {
 }
 
 .kartinki_a:hover {
-    border-bottom: 1px solid;
     color: rgb(216, 213, 213);
 }
 
