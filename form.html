@@ -12,7 +12,7 @@
 <body class="body">
     <header class="header">
         <div class="wrapper">
-            <a href="#" class="header__logo logo"><img src="img/logo.svg" alt="логотип" class="logo__image"></a>
+            <a href="#" class="logo"><img src="img/logo.svg" alt="логотип" class="logo__image"></a>
             <nav class="header__navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link">Product</a></li>
@@ -48,22 +48,22 @@
                                     <span>Birthdate:</span>
                                     <strong><span aria-label="required">*</span></strong>
                                 </label>
-                                <input type="date" id="birthdate" required/>
+                                <input type="date" id="birthdate" required />
                             </li>
                             <li>
                                 <fieldset>
                                     <ul>
                                         <span>Gender:</span>
-                                        <li>
-                                            <label for="title_1">
-                                                <input type="radio" id="title_1" name="title" value="A" />
-                                                Man
+                                        <li class="radio_class">
+                                            <label class="custom-radio" for="title_1">
+                                                <input type="radio" id="title_1" name="title" value="A" /><span>
+                                                    Man</span>
                                             </label>
                                         </li>
-                                        <li>
-                                            <label for="title_2">
-                                                <input type="radio" id="title_2" name="title" value="K" />
-                                                Woman
+                                        <li class="radio_class">
+                                            <label class="custom-radio" for="title_2">
+                                                <input type="radio" id="title_2" name="title" value="K" /><span>
+                                                    Woman</span>
                                             </label>
                                         </li>
                                     </ul>
@@ -76,7 +76,9 @@
                                 </label>
                                 <input type="password" id="pwd" name="password" required />
                             </li>
-                            <li><h1>Contacts</h1></li>
+                            <li>
+                                <h1>Contacts</h1>
+                            </li>
                             <li>
                                 <label for="mail">
                                     <span>Email:</span>
@@ -97,25 +99,29 @@
                                         <span>Time:</span>
                                         <li>
                                             <label for="title_3">
-                                                <input type="checkbox" id="title_3" name="title_1" value="A" />
+                                                <input class="checkbox_class" type="checkbox" id="title_3"
+                                                    name="title_1" value="A" />
                                                 Morning
                                             </label>
                                         </li>
                                         <li>
                                             <label for="title_4">
-                                                <input type="checkbox" id="title_4" name="title_1" value="K" />
+                                                <input class="checkbox_class" type="checkbox" id="title_4"
+                                                    name="title_1" value="K" />
                                                 Afternoon
                                             </label>
                                         </li>
                                         <li>
                                             <label for="title_5">
-                                                <input type="checkbox" id="title_5" name="title_1" value="K" />
+                                                <input class="checkbox_class" type="checkbox" id="title_5"
+                                                    name="title_1" value="K" />
                                                 Evening
                                             </label>
                                         </li>
                                         <li>
                                             <label for="title_6">
-                                                <input type="checkbox" id="title_6" name="title_1" value="K" />
+                                                <input class="checkbox_class" type="checkbox" id="title_6"
+                                                    name="title_1" value="K" />
                                                 Night
                                             </label>
                                         </li>
@@ -123,7 +129,7 @@
                                 </fieldset>
                             </li>
                         </ul>
-                        <ul class="flex_ul">    
+                        <ul class="flex_ul">
                             <li class="button">
                                 <button type="reset">Reset</button>
                             </li>
@@ -132,6 +138,55 @@
                             </li>
                         </ul>
                     </form>
+                </div>
+                <div>
+                    <div class="check-boxes">
+                        <form action="//httpbin.org/post" method="post">
+                            <dl>
+                                <dt class="term">Псевдоэлемент</dt>
+                                <dd>Добавляет виртуальный элемент к существующему элементу.</dd>
+                                <dt>Псевдокласс</dt>
+                                <dd>Выбирает элементы, находящиеся в определенном состоянии.</dd>
+                            </dl>
+
+                            <h2>Псевдоэлементы</h2>
+                            <dl class="pseudo-elements">
+                                <li><input type="checkbox" name="pseudo-elements" value="::after" checked> ::after</li>
+                                <li><input type="checkbox" name="pseudo-elements" value="::before"> ::before</li>
+                                <li><input type="checkbox" name="pseudo-elements" value="::first-letter"> ::first-letter
+                                </li>
+                                <li><input type="checkbox" name="pseudo-elements" value="::marker"> ::marker</li>
+                                <li><input type="checkbox" name="pseudo-elements" value="::selection"> ::selection</li>
+                                <li><input type="checkbox" name="pseudo-elements" value="::first-line"> ::first-line
+                                </li>
+                            </dl>
+
+                            <h2>Псевдоклассы</h2>
+                            <dl class="pseudo-elements">
+                                <li><input type="checkbox" name="pseudo-classes" value=":link"> :link</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":visited"> :visited</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":hover" checked> :hover</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":active"> :active</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":focus"> :focus</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":checked"> :checked</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":enabled"> :enabled</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":disabled"> :disabled</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":first-child"> :first-child</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":last-child"> :last-child</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":first-of-type"> ::first-of-type
+                                </li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":last-of-type"> ::last-of-type
+                                </li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":nth-child(n)" checked>
+                                    ::nth-child(n)</li>
+                                <li><input type="checkbox" name="pseudo-classes" value=":nth-last-child(n)">
+                                    ::nth-last-child(n)</li>
+                            </dl>
+                    </div>
+
+                    <button type="submit">Отправить</button>
+                    </form>
+
                 </div>
             </div>
         </section>

@@ -1,0 +1,69 @@
+.map {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+}
+
+.front-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+}
+
+.map:hover .back-side {
+    opacity: 1;
+}
+
+.map:hover .back-side {
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.container img:nth-child(1) {
+    animation: infinite-scroll 1s linear infinite;
+}
+
+.container img:nth-child(2) {
+    animation: infinite-scroll 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.container img:nth-child(3) {
+    animation: infinite-scroll 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes infinite-scroll {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -300px;
+    }
+}
+
+marquee div {
+    display:inline-block;
+    border:1px solid red;
+}
