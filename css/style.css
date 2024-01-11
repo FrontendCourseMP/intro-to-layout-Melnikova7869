@@ -193,7 +193,7 @@ a {
 
 .a_Tekst_desrypt:hover {
     transform: scale(110%);
-    box-shadow: 0 0 0 5px black;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .read {
