@@ -283,8 +283,11 @@ dl dd::before {
     margin-right: 5px;
 }
 
+input:focus-within {
+    outline: white 2px solid;
+}
 
-label input:checked+span {
+input:checked+span {
     text-decoration: line-through;
 }
 

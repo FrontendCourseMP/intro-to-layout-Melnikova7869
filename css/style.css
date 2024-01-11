@@ -188,7 +188,8 @@ a {
     border: 2px;
     border-radius: 20px;
     height: 100%;
-    color: black;
+    background-color: #2A3744;
+    color: white;
 }
 
 .a_Tekst_desrypt:hover {
@@ -242,6 +243,10 @@ a {
 }
 
 .kartinki_div2 {
+    position: relative;
+}
+
+.kartinki div {
     position: relative;
 }
 
@@ -392,7 +397,8 @@ p {
 .div_button_1000:hover {
     background-color: white;
     transform: scale(110%);
-    box-shadow: 0 0 0 2px #2A3744;;
+    box-shadow: 0 0 0 2px #2A3744;
+    ;
 }
 
 
@@ -714,7 +720,7 @@ label {
     justify-content: center;
 }
 
-label span{
+label span {
     display: none;
 }
 
@@ -747,6 +753,7 @@ label span{
 
 .kartinki {
     position: relative;
+    margin: 4rem 0;
 }
 
 .kartinki-div {
@@ -775,17 +782,6 @@ label span{
     margin: 10px auto;
 }
 
-
-.tekst_podcast {
-    position: relative;
-    background-color: #2A3744;
-    width: 330px;
-    padding: 1rem;
-    border: 2px;
-    color: white;
-    border-radius: 20px;
-}
-
 .T_bol {
     font-weight: 700;
     font-size: 1.2rem;
@@ -808,15 +804,17 @@ label span{
     padding: 1rem;
 }
 
-.log1 {
-    display: flex;
-    align-content: stretch;
-    gap: .8em;
-    max-width: 100%;
+marquee li {
+    display: inline-block;
 }
 
-.log1-img:hover {
-    transform: scale(110%);
+.footer__logo {
+    margin: 1rem 0;
+}
+
+.footer_stars {
+    display: block;
+    margin: 5rem auto;
 }
 
 footer nav ul {
@@ -960,6 +958,10 @@ footer {
         border: none;
         border-style: none;
         align-self: center;
+    }
+
+    .footer_stars {
+        display: none;
     }
 
     .image {

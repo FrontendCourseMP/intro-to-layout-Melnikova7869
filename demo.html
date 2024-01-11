@@ -3,28 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/demo.css">
-    <title>Двусторонняя карта</title>
+    <title>Demo</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="логотип" class="logo__image"></a>
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Product</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Use cases</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Learn</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Jobs</a></li>
+                </ul>
+            </nav>
+            <a href="form.html" class="header__login">Login</a>
+        </div>
+    </header>
     <main>
-        <div class="map">
-            <div class="front-side">
-                <img src="img/front.jpg" alt="Лицевая сторона карты">
+        <div class="wrapper">
+            <div class="map">
+                <div class="front-side">
+                    <img src="img/front.jpg" alt="Лицевая сторона карты">
+                </div>
+                <div class="back-side">
+                    <img src="img/back.jpg" alt="Обратная сторона карты">
+                </div>
             </div>
-            <div class="back-side">
-                <img src="img/back.jpg" alt="Обратная сторона карты">
+            <marquee>
+                <div><img src="img/img_1.jpg" alt="Изображение 1"></div>
+                <div><img src="img/img_2.jpg" alt="Изображение 2"></div>
+                <div><img src="img/img_3.jpg" alt="Изображение 3"></div>
+                <div><img src="img/img_4.jpg" alt="Изображение 3"></div>
+            </marquee>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer">
+                <img class="fut" src="img/logo.svg" alt="логотип">
+                <nav>
+                    <ul class="footer_a">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer_sety">
+                    <li><a href="#"><img src="img/Frame 5689.svg" alt="переход в твитер"></a></li>
+                    <li><a href="#"><img src="img/Frame 5609.svg" alt="переход в телеграмм"></a></li>
+                    <li><a href="#"><img src="img/Frame 5609 (1).svg" alt="переход в ютуб"></a></li>
+                    <li><a href="#"><img src="img/discord_1 1.svg" alt="переход в дискорд"></a></li>
+                </ul>
             </div>
         </div>
-        <marquee>
-            <div><img src="img/img_1.jpg" alt="Изображение 1"></div>
-            <div><img src="img/img_2.jpg" alt="Изображение 2"></div>
-            <div><img src="img/img_3.jpg" alt="Изображение 3"></div>
-            <div><img src="img/img_4.jpg" alt="Изображение 3"></div>
-        </marquee>
-    </main>
+    </footer>
 </body>
 
 </html>

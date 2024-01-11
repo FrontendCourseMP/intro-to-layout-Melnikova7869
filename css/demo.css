@@ -1,3 +1,151 @@
+/* mukta-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/mukta-v14-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mukta-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/mukta-v14-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mukta-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/mukta-v14-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+:root {
+    --primary-color: pink;
+    --second-color: green;
+    --holl-collor: black;
+    --k-color: white;
+    --9--color: blue;
+    --1--color: purple light;
+    --2--color: purple;
+    --3--color: yellow light;
+    --4--color: yellow;
+    --5--color: orange;
+    --6--color: grey;
+    --7--color: pink;
+    --8--color: rgb(227, 112, 227);
+    --10--color: rgb(48, 45, 45);
+    --11--color: rgb(105, 105, 252);
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Mukta", sans-serif;
+}
+
+h1 {
+    color: var(--holl-collor)
+}
+
+body {
+    background-color: #0A1117;
+    color: white
+}
+
+
+.header .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.header__navigation {
+    width: 500px;
+    height: 24px;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.navigation__link {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navigation__link:visited {
+    color: white;
+}
+
+.navigation__link:focus {
+    color: #dcbef4;
+}
+
+.navigation__link:hover {
+    color: yellow;
+}
+
+.navigation__link:active {
+    color: #dcbef4;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo__image {
+    width: 190px;
+}
+
+.header__login {
+    width: 59px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 7px 5px;
+    border: 2px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.2rem;
+    background-position: center;
+    background-color: #243241;
+}
+
+
+.header__login:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px 5px rgba(44, 42, 42, 0.5);
+}
 .map {
     width: 1000px;
     height: 1000px;
@@ -19,42 +167,72 @@
     transform-style: preserve-3d;
 }
 
-.container {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.container img {
-    width: 100%;
-    height: 100%;
-}
-
-.container img:nth-child(1) {
-    animation: infinite-scroll 1s linear infinite;
-}
-
-.container img:nth-child(2) {
-    animation: infinite-scroll 1s linear infinite;
-    animation-delay: 0.5s;
-}
-
-.container img:nth-child(3) {
-    animation: infinite-scroll 1s linear infinite;
-    animation-delay: 1s;
-}
-
-@keyframes infinite-scroll {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: -300px;
-    }
-}
-
 marquee div {
     display:inline-block;
     border:1px solid red;
+}
+
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+    color: rgb(75, 73, 73);
+    width: 100%;
+    gap: 13px;
+    max-width: 700px;
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 28px;
+    color: rgb(75, 73, 73);
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+
+.footer_a {
+    cursor: pointer;
+}
+
+.footer_a a:visited {
+    color: white;
+}
+
+.footer_a a:focus {
+    color: #dcbef4;
+}
+
+.footer_a a:hover {
+    color: yellow;
+}
+
+.footer_sety a:hover {
+    height: fit-content;
+    width: fit-content;
+    display: block;
+}
+
+.footer_sety a:hover img {
+    box-shadow: 0 0 0 1px rgb(137, 137, 243);
+    border-radius: 100%;
+}
+
+.footer_sety {
+    padding: 1rem 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #121E28;
 }
