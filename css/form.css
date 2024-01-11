@@ -102,7 +102,7 @@ p {
     align-items: flex-start;
 }
 
-.logo {
+.fut {
     margin: 80px;
     transform: rotate(30deg) scale(1.5);
     box-shadow: 0 0 10px 10px #000;
@@ -186,6 +186,7 @@ label {
     display: inline-block;
     padding: 2px 5px;
     text-align: right;
+    cursor: pointer;
 }
 
 input,
@@ -276,19 +277,24 @@ dl dt {
     font-weight: bold;
 }
 
-dl dd::after {
+dl dd::before {
     content: '🛈';
     font-size: 16px;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.check-boxes input[type="checkbox"]:checked~label {
+
+label input:checked+span {
     text-decoration: line-through;
 }
 
 .pseudo-elements li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+.pseudo-elements input:focus {
+    box-shadow: 0 0 0 2px black;
 }
 
 .pseudo-elements li:nth-child(even) {

@@ -139,9 +139,9 @@ h1 {
 
 
 .header__login:hover {
-    border-bottom: 1px solid;
-    background: rgb(66, 65, 65);
-    opacity: 0.7;
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px 5px rgba(44, 42, 42, 0.5);
 }
 
 .sr-only {
@@ -188,12 +188,12 @@ a {
     border: 2px;
     border-radius: 20px;
     height: 100%;
+    color: black;
 }
 
 .a_Tekst_desrypt:hover {
     transform: scale(110%);
-    transition: background-color 3s, transform 2.5s;
-    opacity: 0.7;
+    box-shadow: 0 0 0 5px black;
 }
 
 .read {
@@ -210,14 +210,25 @@ a {
     background-color: rgb(119, 119, 240);
 }
 
-.Tekst_decrypt:nth-child(2) .a_Tekst_desrypt{
+.Tekst_decrypt:nth-child(2) .a_Tekst_desrypt {
     background-color: rgb(184, 119, 240);
 }
 
-.Tekst_decrypt:last-child .a_Tekst_desrypt{
+.Tekst_decrypt:last-child .a_Tekst_desrypt {
     background-color: rgb(213, 213, 90);
 }
 
+.tekst_podcast .bol {
+    color: white;
+}
+
+.tekst_podcast .mal {
+    color: white;
+}
+
+.tekst_podcast .read {
+    color: white;
+}
 
 .bol {
     font-size: 2.4rem;
@@ -256,9 +267,8 @@ p {
 }
 
 .div_a1:hover {
-    border-bottom: 1px solid;
     background: white;
-    opacity: 0.7;
+    box-shadow: 0 0 10px 5px rgba(44, 42, 42, 0.5);
 }
 
 .strelki {
@@ -324,7 +334,8 @@ p {
 :is(.a1, .b1, .c1, .d1, .f1, .g1, .h1):hover {
     background: rgb(41, 40, 40);
     opacity: 1;
-}    
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
 
 .div_readyfor {
     display: flex;
@@ -375,8 +386,9 @@ p {
 }
 
 .div_button_1000:hover {
-    border-bottom: 1px solid;
-    background: rgb(66, 65, 65);
+    background-color: white;
+    transform: scale(110%);
+    box-shadow: 0 0 0 2px #2A3744;;
 }
 
 
@@ -431,6 +443,7 @@ p {
 
 .tekst_1 a:hover {
     color: #23C9DE;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .tekst_1 a:active {
@@ -496,6 +509,7 @@ span {
 
 .tekst_2 a:hover {
     color: yellow;
+    transform: scale(1.1);
 }
 
 .tekst_2 a:active {
@@ -518,7 +532,7 @@ span {
 
 .smotret_video:hover {
     transform: scale(110%);
-    transition: background-color 3s, transform 2.5s;
+    box-shadow: 0 0 0 2px #2A3744;
 }
 
 .smotret_video span {
@@ -644,8 +658,8 @@ span {
 .button_button:hover {
     background-color: white;
     transform: scale(110%);
-  }
-  
+}
+
 
 .h2_every {
     width: 100%;
@@ -697,8 +711,8 @@ span {
     background: #2A3744;
 }
 
-.form:hover {
-    transform: scale(110%);
+label {
+    visibility: hidden;
 }
 
 .button_button {
@@ -748,7 +762,8 @@ span {
 .kartinki_a_medua {
     position: absolute;
     top: 20px;
-    right: 260px;
+    right: 20px;
+    display: block;
 }
 
 .kartinki div {
@@ -760,10 +775,11 @@ span {
 
 .tekst_podcast {
     position: relative;
-    background-color: rgb(59, 59, 63);
+    background-color: #2A3744;
     width: 330px;
     padding: 1rem;
     border: 2px;
+    color: white;
     border-radius: 20px;
 }
 
@@ -782,7 +798,7 @@ span {
 }
 
 .kartinki_a_medua:hover {
-    background-color: rgb(216, 213, 213);
+    transform: scale(110%);
 }
 
 .kartinki_span {
@@ -821,6 +837,10 @@ footer ul {
     font-size: 1.6rem;
 }
 
+.footer_a {
+    cursor: pointer;
+}
+
 .footer_a a:visited {
     color: white;
 }
@@ -840,9 +860,12 @@ footer ul {
 }
 
 .footer_sety a:hover img {
-    box-sizing: border-box;
-    border: 1px rgb(137, 137, 243) solid;
+    box-shadow: 0 0 0 1px rgb(137, 137, 243);
     border-radius: 100%;
+}
+
+.footer_sety {
+    padding: 1rem 0;
 }
 
 .footer {
@@ -851,6 +874,10 @@ footer ul {
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
+}
+
+footer {
+    background-color: #121E28;
 }
 
 @media (max-width: 1200px) {
@@ -938,6 +965,8 @@ footer ul {
 
     .kartinki_a_medua {
         text-align: center;
+        position: relative;
+        right: 0;
     }
 
     .h2_Press {
