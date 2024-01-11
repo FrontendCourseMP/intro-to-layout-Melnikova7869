@@ -565,6 +565,7 @@ span {
 .stars_work {
     display: block;
     margin-left: auto;
+    margin-right: 23rem;
 }
 
 .rabotay_c {
@@ -822,6 +823,7 @@ label span {
 .stars_backed_by {
     display: block;
     margin-left: auto;
+    margin-right: 21rem;
 }
 
 marquee li {
@@ -1021,6 +1023,11 @@ footer {
     .button_button {
         width: 270px;
     }
+    .stars_backed_by {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
 
     .navigation__link {
         font-size: 1.1rem;
@@ -1030,6 +1037,13 @@ footer {
         display: block;
         margin-left: auto;
     }
+
+    .stars_work {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
 
     .h2_1 {
         font-size: 3.7rem;
