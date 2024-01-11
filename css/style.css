@@ -95,7 +95,7 @@ h1 {
 }
 
 .navigation__link {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .navigation__link:visited {
@@ -132,7 +132,7 @@ h1 {
     padding: 7px 5px;
     border: 2px;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background-position: center;
     background-color: #243241;
 }
@@ -199,12 +199,12 @@ a {
 
 .read {
     color: black;
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: left;
 }
 
 .Tekst_decrypt_img {
-    position: absolute;
+    margin-left: 0.4rem;
 }
 
 .Tekst_decrypt:nth-child(1) .a_Tekst_desrypt {
@@ -346,6 +346,11 @@ p {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
+.stars_ready {
+    display: block;
+    margin-left: 15rem;
+}
+
 .div_readyfor {
     display: flex;
     justify-content: center;
@@ -429,6 +434,13 @@ p {
     margin: 40px auto;
     padding: 0 1rem;
     text-align: center;
+}
+
+.stars_designed {
+    display: block;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-right: 13rem;
 }
 
 .tekst_1 {
@@ -548,6 +560,11 @@ span {
 .smotret_video span {
     color: #FFCF01;
     font-size: 2rem;
+}
+
+.stars_work {
+    display: block;
+    margin-left: auto;
 }
 
 .rabotay_c {
@@ -746,9 +763,13 @@ label span {
 }
 
 .h2_Press {
-    margin: 40px auto;
+    margin: 1rem auto;
     padding: 0 1rem;
     font-size: 4.5rem;
+}
+
+.stars_press {
+    margin-left: 13rem;
 }
 
 .kartinki {
@@ -771,15 +792,9 @@ label span {
 
 .kartinki_a_medua {
     position: absolute;
-    top: 20px;
+    top: 90px;
     right: 20px;
     display: block;
-}
-
-.kartinki div {
-    border: 2px;
-    border-radius: 18px;
-    margin: 10px auto;
 }
 
 .T_bol {
@@ -802,6 +817,11 @@ label span {
 
 .kartinki_span {
     padding: 1rem;
+}
+
+.stars_backed_by {
+    display: block;
+    margin-left: auto;
 }
 
 marquee li {
@@ -907,7 +927,7 @@ footer {
     }
 
     .div_button_1000 {
-        font-size: 2.4rem;
+        font-size: 2.1rem;
     }
 
     .img-and-txt {
@@ -927,7 +947,7 @@ footer {
     }
 
     .read {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -964,6 +984,11 @@ footer {
         display: none;
     }
 
+    .stars_ready {
+        display: block;
+        margin-left: 0;
+    }
+
     .image {
         display: none;
     }
@@ -972,6 +997,14 @@ footer {
         text-align: center;
         position: relative;
         right: 0;
+        top: 1rem;
+    }
+
+    .stars_designed {
+        display: block;
+        margin-left: auto;
+        margin-top: 3rem;
+        margin-right: 0;
     }
 
     .h2_Press {
@@ -991,6 +1024,11 @@ footer {
 
     .navigation__link {
         font-size: 1.1rem;
+    }
+
+    .stars_press {
+        display: block;
+        margin-left: auto;
     }
 
     .h2_1 {
