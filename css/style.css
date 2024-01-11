@@ -279,6 +279,10 @@ p {
     background-position: center;
 }
 
+.a_span_str {
+    display: none;
+}
+
 .h2_2 {
     font-family: 'Onest', sans-serif;
     margin: 30px auto;
@@ -693,15 +697,6 @@ span {
     background-color: rgb(34, 39, 49);
 }
 
-.form_medua {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
 .form {
     font-size: 2rem;
     padding: 10px;
@@ -712,7 +707,15 @@ span {
 }
 
 label {
-    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+label span{
+    display: none;
 }
 
 .button_button {
@@ -981,7 +984,7 @@ footer {
     }
 
     .button_button {
-        width: 300px;
+        width: 270px;
     }
 
     .navigation__link {
