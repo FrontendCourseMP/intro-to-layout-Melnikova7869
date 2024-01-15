@@ -271,6 +271,21 @@ p {
     text-align: center;
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #18191c;
+    background: #e04ff3;
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
+
 .div_a1:hover {
     background: white;
     box-shadow: 0 0 10px 5px rgba(44, 42, 42, 0.5);
@@ -544,7 +559,7 @@ span {
     align-items: center;
     background-color: rgb(90, 90, 53);
     width: 100%;
-    max-width: 170px;
+    max-width: 190px;
     margin: 40px auto;
     padding: 0 12px;
     border: 2px;
@@ -559,7 +574,8 @@ span {
 
 .smotret_video span {
     color: #FFCF01;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .stars_work {
@@ -1023,6 +1039,7 @@ footer {
     .button_button {
         width: 270px;
     }
+
     .stars_backed_by {
         display: block;
         margin-left: auto;
@@ -1043,7 +1060,7 @@ footer {
         margin-left: auto;
         margin-right: 0;
     }
-    
+
 
     .h2_1 {
         font-size: 3.7rem;
