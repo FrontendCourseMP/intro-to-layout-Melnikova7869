@@ -12,7 +12,11 @@
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Доступная страница про доступность</h1> <style>
+            h1 {
+                display: none;
+            }
+            </style>
         <details>
             <summary>Эта страница про доступность в веб (и вообще)</summary>
             <p>
@@ -113,12 +117,12 @@
             <dialog id="myDialog">
                 <p id="dialog-name">Я форма обратной связи!</p>
                 🖖 Живи долго и процветай!
-                <form method="dialog">
-                    <label for="text">
-                        <input type="text" placeholder="Введите текст" id="text" />
+                <form method="dialog" action="">
+                    <label for="text">Введите текст
+                        <input type="text" placeholder="Введите текст" id="text" required/>
                     </label>
-                    <label for="email">
-                        <input type="email" placeholder="Введите email" id="mail" name="user_email" />
+                    <label for="email">Введите email
+                        <input type="email" placeholder="Введите email" id="email" name="user_email" required/>
                     </label>
                     <button>Закрыть (мы с вами свяжемся)</button>
                 </form>
